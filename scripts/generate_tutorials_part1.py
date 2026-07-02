@@ -172,7 +172,7 @@ print("Block [1:3, 2:5]:\\n", t[1:3, 2:5])
 fig, axes = plt.subplots(1, 3, figsize=(14, 3))
 axes[0].imshow(t.numpy(), cmap='Blues'); axes[0].set_title('Full tensor')
 mask = torch.zeros_like(t, dtype=bool); mask[1:3, 2:5] = True
-highlighted = t.numpy().copy(); highlighted[~mask.numpy()] = np.nan
+highlighted = t.numpy().astype(float).copy(); highlighted[~mask.numpy()] = np.nan
 axes[1].imshow(highlighted, cmap='Reds'); axes[1].set_title('Sliced block')
 axes[2].imshow(t[:, 2].numpy().reshape(-1, 1), cmap='Greens', aspect=0.3)
 axes[2].set_title('Column 2')

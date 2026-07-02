@@ -1726,9 +1726,9 @@ ax.set_title('Empirical drop rate per neuron (6 passes)')
 plt.tight_layout(); plt.show()"""),
         md("## 5. Train vs eval mode output scale"),
         code("""model.train()
-train_outs = torch.stack([model(x) for _ in range(50)]).mean(0)
+train_outs = torch.stack([model(x).detach() for _ in range(50)]).mean(0)
 model.eval()
-eval_out = model(x)
+eval_out = model(x).detach()
 fig, axes = plt.subplots(1, 2, figsize=(11, 4))
 axes[0].bar(range(16), train_outs.squeeze().numpy(), color='coral')
 axes[0].set_title('Mean output in train mode (noisy)')
