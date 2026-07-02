@@ -16,15 +16,24 @@ pytorch-deep-learning/
 
 ## Quick start
 
-### 1. Learning path (beginners)
+### 1. Learning path — 55 visual tutorials (start here)
 
-| Order | Folder | Topic |
-|-------|--------|-------|
-| 1 | `tutorials/01_tensors_and_basics/` | Tensors |
-| 2 | `tutorials/02_autograd/` | Autograd |
-| 3 | `tutorials/03_nn_modules/` | `nn.Module` |
-| 4 | `tutorials/04_training/` | Training pipeline |
-| 5 | `tutorials/05_projects/` | MNIST & Fashion-MNIST projects |
+| Order | Folder | Notebooks | Topics |
+|-------|--------|-----------|--------|
+| 1–8 | `01_tensors_and_basics/` | 8 | Scalars → tensors, dtypes, broadcasting |
+| 9–14 | `02_autograd/` | 6 | Computation graph, gradients |
+| 15–21 | `03_nn_modules/` | 7 | Layers, activations, losses, optimizers |
+| 22–27 | `04_training/` | 6 | DataLoader, training loop, learning curves |
+| 28–30 | `05_projects/` | 3 | MNIST & Fashion-MNIST |
+| 31–35 | `06_cnn_basics/` | 5 | Convolution, pooling, mini-CNN |
+| 36–40 | `07_visualization/` | 5 | Metrics, weights, decision boundaries |
+| 41–44 | `08_optimization_landscapes/` | 4 | GD, learning rate, momentum |
+| 45–48 | `09_regularization/` | 4 | Dropout, batch norm, weight decay |
+| 49–51 | `10_sequence_models/` | 3 | RNN, LSTM, attention heatmaps |
+| 52–53 | `11_probability/` | 2 | Softmax, sampling |
+| 54–55 | `12_data_pipeline/` | 2 | Normalization, augmentation |
+
+Full index with links: [tutorials/README.md](tutorials/README.md)
 
 ### 2. TorchLeet interview prep (75 problems)
 
