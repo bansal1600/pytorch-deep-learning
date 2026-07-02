@@ -1,1 +1,6 @@
 scripts/__pycache__/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+runs/
+.DS_Store

@@ -1,0 +1,5 @@
+torch>=2.0
+torchvision>=0.15
+jupytext>=1.16
+nbconvert>=7.0
+nbformat>=5.9
